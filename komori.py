@@ -116,8 +116,14 @@ class spectrogram:
         """
         return self.RMSE(), self.FFT()
 
-    def subsample(self, step=84):
-        """ extracting 256x256 images"""
+    def subsample(self, step=128):
+        """
+        Extracting samples using 256x256 sliding window
+        Window is being slided between sampling by step ammount of data points in time units.
+        Default step is 128 which make samples that overlaps by 50 percent
+
+
+        """
         subsamples = []
         fl = self.data.shape[1]
 
@@ -212,11 +218,6 @@ class spectrogram:
                     sets.append([ind[start], ind[stop]])
         return sets
 
-    def detectFeatures(self, input):
-        """ Finds features """
-
-        pass
-
     def plot(self):
         """
         Plots the spectrogram using matplotlib
@@ -226,7 +227,7 @@ class spectrogram:
             return '%1.1f ms' %((x*self.timeUnit)/1000)
 
         def freq_f(x, pos):
-            return '%1.1f kHz' %((x*self.frequencyUnit)/1000)
+            return '%1.1f kHz' %((x*self.frequencyUnit))
 
         # TODO: add units and spectrogram info
         formatter_t = FuncFormatter(time_t)
