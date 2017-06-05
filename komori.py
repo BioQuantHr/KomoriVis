@@ -224,10 +224,10 @@ class spectrogram:
 
         """
         def time_t(x, pos):
-            return '%1.1f ms' %((x*self.timeUnit)/1000)
+            return '%1.1f ms' %((x*self.timeUnit))
 
         def freq_f(x, pos):
-            return '%1.1f kHz' %((x*self.frequencyUnit))
+            return '%1.1f kHz' %((x*self.frequencyUnit)/1000)
 
         # TODO: add units and spectrogram info
         formatter_t = FuncFormatter(time_t)
