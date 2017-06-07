@@ -14,6 +14,5 @@ setup(
           'numpy',
           'scipy',
           'matplotlib',
-          'pylab',
       ],
 )
