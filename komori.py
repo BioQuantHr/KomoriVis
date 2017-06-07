@@ -119,10 +119,10 @@ class spectrogram:
     def subsample(self, step=128):
         """
         Extracting samples using 256x256 sliding window
-        Window is being slided between sampling by step ammount of data points in time units.
+        Window is being slided between sampling by step ammount of data points in time domain.
         Default step is 128 which make samples that overlaps by 50 percent
 
-
+        This feature will
         """
         subsamples = []
         fl = self.data.shape[1]
