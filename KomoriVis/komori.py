@@ -10,7 +10,15 @@ import webbrowser
 """Komori visualization subpackage"""
 
 class recording:
-    """ Recording class """
+    """ Recording class
+
+    path - path to WAV file
+
+    example:
+
+    r = recording(path = '/path/to/file.wav')
+
+    """
     def __init__(self, path):
         self.path = path
         self.samplerate, self.data = wavfile.read(self.path)
@@ -37,6 +45,9 @@ class recording:
         wavfile.write('tmp/'+'resampled.wav', 44100, resampled)
 
     def play(self, et=10):
+        """
+        Plays the recording with default mediaplayer resampled for human hearing
+        """
         self.resample(et)
         webbrowser.open(os.path.abspath("tmp/resampled.wav"))
 
@@ -53,7 +64,9 @@ class spectrogram:
         """
         Short time fourier transformation
 
-
+        recording: recording class
+        n_fft: size of STFT window (defaults to 512 samples)
+        hop: hop size (defalts to 64 samples or 87.5 percent of window overlap)
         """
         data = np.float64(recording.data)
         w = scipy.hanning(n_fft)
@@ -163,6 +176,7 @@ class spectrogram:
         self.data = (self.data / noise**1)**1
 
     def findNoise(self):
+        
         rmse = self.RMSE()
         rmse_lm = np.where(rmse.T <= np.mean(rmse.T)+np.std(rmse.T))
         rmse_lm = rmse_lm[0].tolist()
