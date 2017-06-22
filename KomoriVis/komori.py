@@ -153,7 +153,7 @@ class spectrogram:
 
         return subsamples
 
-    def clean_noise(self, events_t):
+    def clean_noise(self, events_t, p1=1, p2=1):
         """ Noise cleanup """
         # print self.timeUnit
         noises = []
@@ -173,10 +173,10 @@ class spectrogram:
         noise = self.data[: ,events[0]:events[1]+1]
         noise = np.mean(np.abs(noise), axis=1)
         noise = noise[:, None]
-        self.data = (self.data / noise**1)**1
+        self.data = (self.data / noise**p1)**p2
 
     def findNoise(self):
-        
+
         rmse = self.RMSE()
         rmse_lm = np.where(rmse.T <= np.mean(rmse.T)+np.std(rmse.T))
         rmse_lm = rmse_lm[0].tolist()
