@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: KomoriVis
+Version: 0.165
+Summary: KomoriVis: Bat call visualisation package
+Home-page: https://github.com/BioQuantHr/KomoriVis
+Author: Domagoj K. Hackenberger
+Author-email: domagojhack@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/BioQuantHr/KomoriVis/archive/0.165.tar.gz
+Description: UNKNOWN
+Keywords: STFT,spectrogram,bat,calls,spectrograms,bioacoustics,ultrasound
+Platform: UNKNOWN
