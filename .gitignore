@@ -7,3 +7,4 @@ KomoriVis.egg-info/*
 KomoriVIs.egg*
 yacctab.py
 MANIFEST
+.pypirc
