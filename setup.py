@@ -2,7 +2,7 @@ from distutils.core import setup
 setup(
   name = 'KomoriVis',
   packages = ['KomoriVis'], # this must be the same as the name above
-  version = '0.165',
+  version = '0.17',
   description = 'KomoriVis: Bat call visualisation package',
   author = 'Domagoj K. Hackenberger',
   author_email = 'domagojhack@gmail.com',

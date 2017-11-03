@@ -19,3 +19,8 @@ And by running the installation with pip:
 ```shell
 pip install -e cloned_path
 ```
+
+### Warning
+Package is not compatible with python3.
+
+Bugs to be fixed in future versions

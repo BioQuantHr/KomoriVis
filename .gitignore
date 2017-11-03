@@ -2,3 +2,7 @@
 *.pyc
 *.sh
 test.py
+dist/*
+KomoriVis.egg-info/*
+KomoriVIs.egg*
+yacctab.py

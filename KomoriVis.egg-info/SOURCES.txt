@@ -1,8 +1,0 @@
-setup.cfg
-KomoriVis/__init__.py
-KomoriVis/komori.py
-KomoriVis.egg-info/PKG-INFO
-KomoriVis.egg-info/SOURCES.txt
-KomoriVis.egg-info/dependency_links.txt
-KomoriVis.egg-info/requires.txt
-KomoriVis.egg-info/top_level.txt
