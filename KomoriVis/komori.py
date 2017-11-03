@@ -9,6 +9,9 @@ import webbrowser
 
 """Komori visualization subpackage"""
 
+def version():
+    return '0.18'
+
 class recording:
     """ Recording class
 
@@ -176,6 +179,7 @@ class spectrogram:
         self.data = (self.data / noise**p1)**p2
 
     def findNoise(self):
+        """ Function that finds the systematic nois of the recording in spectrogram"""
 
         rmse = self.RMSE()
         rmse_lm = np.where(rmse.T <= np.mean(rmse.T)+np.std(rmse.T))
@@ -188,7 +192,7 @@ class spectrogram:
         """
         This part made system ignore quieter bat calls
         for SURF feature extraction and convolutional neural networks
-        sliding window system is implemented
+        sliding window system is advised to be implemented (subsample method)
         """
         rmse = self.RMSE()
         rmse_lm = np.where(rmse.T >= np.mean(rmse.T)+np.std(rmse.T))
