@@ -1,4 +1,5 @@
-[![DOI](https://zenodo.org/badge/91787496.svg)](https://zenodo.org/badge/latestdoi/91787496)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1069404.svg)](https://doi.org/10.5281/zenodo.1069404)
+
 
 # KomoriVis
 Bat call audio recording visualization package for Python.
