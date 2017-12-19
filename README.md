@@ -15,7 +15,7 @@ pip install KomoriVis
 You can install the latest version by cloning the repo:
 
 ```shell
-git clone https://github.com/BioQuantHr/KomoriVis.git cloned_path
+git clone https://github.com/DomagojHack/KomoriVis.git
 ```
 And by running the installation with pip:
 
