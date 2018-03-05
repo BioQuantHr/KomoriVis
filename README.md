@@ -1,12 +1,12 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1069404.svg)](https://doi.org/10.5281/zenodo.1069404)
 
 
-# KomoriVis
+# komori
 Bat call audio recording visualization package for Python.
 
 ## Installation
 
-You can install the package with pip
+You can install the package with pip (currently not working please install using git repo)
 
 ```shell
 pip install komori
