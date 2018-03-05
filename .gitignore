@@ -8,3 +8,4 @@ KomoriVIs.egg*
 yacctab.py
 MANIFEST
 .pypirc
+*.egg*
