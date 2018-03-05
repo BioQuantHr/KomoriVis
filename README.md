@@ -9,13 +9,13 @@ Bat call audio recording visualization package for Python.
 You can install the package with pip
 
 ```shell
-pip install KomoriVis
+pip install komori
 ```
 
 You can install the latest version by cloning the repo:
 
 ```shell
-git clone https://github.com/DomagojHack/KomoriVis.git
+git clone https://github.com/DomagojHack/komori.git
 ```
 And by running the installation with pip:
 

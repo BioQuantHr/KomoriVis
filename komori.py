@@ -6,11 +6,12 @@ import matplotlib.pyplot as plt
 from matplotlib.ticker import FuncFormatter
 import os
 import webbrowser
+from future import *
 
 """Komori visualization subpackage"""
 
 def version():
-    return '0.18'
+    return '0.19'
 
 class recording:
     """ Recording class
