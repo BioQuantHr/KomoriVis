@@ -9,3 +9,4 @@ yacctab.py
 MANIFEST
 .pypirc
 *.egg*
+build/*
