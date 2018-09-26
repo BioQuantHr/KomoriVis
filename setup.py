@@ -1,18 +1,15 @@
-from distutils.core import setup
-setup(
-  name = 'komori',
-  packages = ['komori'], # this must be the same as the name above
-  version = '0.19',
-  description = 'komori: bat call recording visualisation package',
-  author = 'Domagoj K. Hackenberger',
-  author_email = 'domagojhack@gmail.com',
-  url = 'https://github.com/DomagojHAck/komori', # use the URL to the github repo
-  download_url = 'https://github.com/DomagojHack/komori/archive/0.19.tar.gz', # I'll explain this in a second
-  keywords = ['STFT', 'spectrogram', 'bat', 'calls', 'spectrograms', 'bioacoustics', 'ultrasound'], # arbitrary keywords
-  classifiers = [],
-  install_requires=[
-          'numpy',
-          'scipy',
-          'matplotlib',
-      ],
+import setuptools
+
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
+setuptools.setup(
+    name="Komori",
+    version="0.20",
+    author="Domagoj K. Hackenberger",
+    author_email="domagoj@bioquant.hr",
+    description="komori",
+    packages=setuptools.find_packages(),
+    classifiers=[
+        "Development Status :: 4 - Beta"],
 )

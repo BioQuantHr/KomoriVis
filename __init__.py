@@ -1,1 +1,0 @@
-from komori import *

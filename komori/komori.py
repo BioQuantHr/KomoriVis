@@ -13,7 +13,7 @@ except:
 """Komori visualization subpackage"""
 
 def version():
-    return '0.19'
+    return '0.20'
 
 class recording:
     """ Recording class
