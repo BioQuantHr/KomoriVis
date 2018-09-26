@@ -6,8 +6,10 @@ import matplotlib.pyplot as plt
 from matplotlib.ticker import FuncFormatter
 import os
 import webbrowser
-from future import *
-
+try:
+    from future import *
+except:
+    pass
 """Komori visualization subpackage"""
 
 def version():
